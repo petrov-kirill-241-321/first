@@ -1,0 +1,114 @@
+.header {
+  background-color: var(--dark-blue);
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 660px;
+    aspect-ratio: 1;
+    background: url(../../icons/header-bg.svg) no-repeat;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -38px;
+    left: 520px;
+    width: 1438px;
+    z-index: 1000;
+    aspect-ratio: 1;
+    background: url(../../icons/header-bg-large.svg) no-repeat;
+  }
+
+  &__inner {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    margin-inline: auto;
+    align-items: center;
+
+    @include tablet {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__logo {
+    margin-right: 96px;
+
+    @include desktop {
+      margin-right: 50px;
+      margin-left: auto;
+    }
+
+    @include tablet {
+      margin-right: 30px;
+    }
+
+    @include mobile {
+      margin-inline: 40px;
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 36px;
+      padding-right: 314px;
+
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--text-secondary);
+
+      @include desktop {
+        padding-right: 150px;
+      }
+
+      @include tablet {
+        padding-right: 50px;
+        column-gap: 20px;
+        margin: auto;
+      }
+    }
+
+    &-link {
+      color: var(--gray);
+    }
+  }
+
+  &__registration {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: var(--text-secondary);
+
+    @include desktop {
+      margin-right: auto;
+    }
+
+    @include tablet {
+      column-gap: 25px;
+    }
+
+    @include mobile {
+      margin-inline: auto;
+    }
+  }
+
+  &__link {
+    width: 50px;
+  }
+}

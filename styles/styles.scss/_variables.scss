@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../../fonts/Roboto-Regular.woff2d) format("woff2");
+}
+
+:root {
+  --red: #ef2a82;
+  --dark-blue: #172755;
+  --blue: #0088f0;
+  --white: #eeeef6;
+  --gray: #8794ba;
+
+  --font-family: "Roboto", sans-serif;
+
+  --chart-lines: #eeeef6;
+  --text-secondary: #8794ba;
+  --text---main: #172755;
+
+  --border-radius-button: 68px;
+  --border-radius-image: 30px;
+
+  --transition-duration: 0.2s;
+
+  --max-width: 1180px;
+  --padding-x: 150px;
+
+  --border: 1px solid var(--white);
+
+  font-size: 65.5%;
+}
