@@ -1,0 +1,14 @@
+.navigation {
+  &__list {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+
+    display: flex;
+    column-gap: 36px;
+  }
+
+  &__link {
+    color: var(--gray);
+  }
+}

@@ -1,0 +1,78 @@
+.subscribe {
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 10px;
+
+    &--dark-blue {
+      color: var(--dark-blue);
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+  }
+
+  &__number {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding-inline: 60px;
+
+    &:not(:first-child) {
+      border-top: 1px solid var(--gray);
+      padding-top: 28px;
+    }
+
+    &--dark-blue {
+      color: var(--dark-blue);
+    }
+  }
+
+  &__button {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    width: 206px;
+    height: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(28, 15, 83);
+    padding: 50px 60px 70px;
+    border-radius: 30px;
+    width: 100%;
+
+    @include desktop {
+      padding: 20px 10px 30px;
+    }
+
+    @include tablet {
+      padding: 15px 5px 20px;
+    }
+
+    @include mobile {
+      padding: 20px 70px 30px;
+    }
+
+    &--white {
+      background-color: var(--white);
+    }
+  }
+}
